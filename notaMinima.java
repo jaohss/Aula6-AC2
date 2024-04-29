@@ -20,12 +20,7 @@ public class notaMinima{
         System.out.println("Digite a nota da AG: ");
         notaAG = scn.nextDouble();
 
-        notaACI = notaACI*0.15;
-        notaACII = notaACII*0.3;
-        notaAF = notaAF*0.45;
-        notaAG = notaAG*0.1;
-
-        media=(notaACI+notaACII+notaAF+notaAG)/1;
+         media=(notaACI*0.15+notaACII*0.3+notaAF*0.45+notaAG*0.1)/1;
 
         if (media<minima){
             System.out.println("O aluno Fulano ficou com a nota média de "+media+ " que está abaixo da nota minima de aprovação, que é de " +minima+ " ,portanto está reprovado");
